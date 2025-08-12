@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpService } from 'activities-rest-lib';
 
 @Component({
   selector: 'acda-main',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './main.component.sass'
 })
 export class AcdaMainPageComponent {
+  constructor(private readonly _service: HttpService) {
 
+  }
 }
