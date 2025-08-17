@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@primeng/themes": "^18.0.2",
-    "activities-rest-lib": "file:../lib/dist/activities-rest-lib",
+    "activities-rest-lib": "file:../lib/dist/activities-rest-lib/activities-rest-lib-0.0.1.tgz",
     "primeng": "^18.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
