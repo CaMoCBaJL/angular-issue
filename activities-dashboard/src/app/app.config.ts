@@ -8,6 +8,7 @@ import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { NgxMaskModule } from 'ngx-mask';
 import { DynamicFormsCoreModule } from '@ng-dynamic-forms/core';
+import { DynamicFormsBasicUIModule } from '@ng-dynamic-forms/ui-basic';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -22,7 +23,8 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     importProvidersFrom(
       NgxMaskModule.forRoot(),
-      DynamicFormsCoreModule.forRoot()
+      DynamicFormsCoreModule.forRoot(),
+      DynamicFormsBasicUIModule,
     )
   ],
   
