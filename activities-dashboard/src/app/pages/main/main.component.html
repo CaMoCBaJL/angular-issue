@@ -2,6 +2,8 @@
     <h1>Привет, /имя/!</h1>
     <div class="profile"></div>
     <h3>Сегодня, /дата, например, 16 апреля (среда) 2025/</h3>
+    <input mask="00-00-000" />
+    <button mat-icon-button color="primary">bim bom bam</button>
 </div>
 
 <div class="body">
@@ -12,4 +14,9 @@
     <a href="test">Беклог</a>
     <button>Добавить дело</button>
     <a href="test">Статистика</a>
+
+    <form [formGroup]="formGroup">
+        <dynamic-basic-form [group]="myFormGroup" [model]="myFormModel"></dynamic-basic-form>
+
+    </form>
 </div>
