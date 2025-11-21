@@ -18,14 +18,15 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "@ng-dynamic-forms/core": "15.0.0",
+    "@ng-dynamic-forms/ui-basic": "15.0.0",
     "@primeng/themes": "^18.0.2",
+    "legacy-dep": "file:../legacy-lib/dist/legacy-dep/legacy-dep-0.0.1.tgz",
+    "ngx-mask": "13.2.2",
     "primeng": "^18.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.10",
-    "@ng-dynamic-forms/core": "15.0.0",
-    "@ng-dynamic-forms/ui-basic": "15.0.0",
-    "ngx-mask": "13.2.2"
+    "zone.js": "~0.14.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.4",

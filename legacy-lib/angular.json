@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "legacy-dep": {
+      "projectType": "library",
+      "root": "projects/legacy-dep",
+      "sourceRoot": "projects/legacy-dep/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/legacy-dep/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/legacy-dep/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/legacy-dep/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/legacy-dep/src/test.ts",
+            "tsConfig": "projects/legacy-dep/tsconfig.spec.json",
+            "karmaConfig": "projects/legacy-dep/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "legacy-dep"
+}
