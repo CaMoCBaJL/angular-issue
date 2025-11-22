@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "try-legacy-lib": "npm i C:/Users/Антон/Documents/Projects/activities/frontend/legacy-lib/dist/legacy-dep/legacy-dep-0.0.1.tgz --legacy-peer-deps && npm run start"
   },
   "private": true,
   "dependencies": {
@@ -18,8 +19,6 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
-    "@ng-dynamic-forms/core": "15.0.0",
-    "@ng-dynamic-forms/ui-basic": "15.0.0",
     "@primeng/themes": "^18.0.2",
     "legacy-dep": "file:../legacy-lib/dist/legacy-dep/legacy-dep-0.0.1.tgz",
     "ngx-mask": "13.2.2",

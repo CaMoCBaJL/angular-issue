@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { LegacyDepComponent } from './legacy-dep.component';
 import { DynamicFormsBasicUIModule } from '@ng-dynamic-forms/ui-basic';
 import { DynamicFormsCoreModule } from '@ng-dynamic-forms/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     LegacyDepComponent
   ],
   imports: [
+    FormsModule,
     ReactiveFormsModule,
     DynamicFormsCoreModule.forRoot(),
     DynamicFormsBasicUIModule,

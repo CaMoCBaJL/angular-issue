@@ -3,5 +3,10 @@
   "dest": "../../dist/legacy-dep",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": [
+    "@ng-dynamic-forms/core",
+    "@ng-dynamic-forms/ui-basic",
+    "angular2-text-mask"
+  ]
 }
